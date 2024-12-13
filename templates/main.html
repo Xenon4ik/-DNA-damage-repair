@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+ 
+{% block body %} 
+
+<h1 class="main__title">Графики репарации поврежденных оснований и однонитевых разрывов</h1>
+        <form  method='post' action="/plot" class="page_form" enctype="multipart/form-data">
+            <legend class="form__field">Введите дозу (Гр):
+                <input class="form__field-input" name="dose" type="text" >
+            </legend>
+            <input class="submit__button" value="Получить график" type="submit"></input>
+        </form> 
+    </main>
+{% endblock %}

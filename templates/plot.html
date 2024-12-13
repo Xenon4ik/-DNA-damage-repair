@@ -1,0 +1,9 @@
+{% extends 'base.html' %} 
+ 
+{% block body %}
+
+<h1 class="main__title">Графики репарации поврежденных оснований и однонитевых разрывов</h1>
+<p class="main__text">При дозе {{dose}}</p>
+<img src="{{url_for('static', filename='plot.png')}}" width="500" height="500">
+
+{% endblock %}
